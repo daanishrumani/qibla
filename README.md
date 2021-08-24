@@ -2,7 +2,7 @@
 A helper class (Qibla) to provide you the qibla direction relative to *True North* based on provided coordinates
 
 # Installation
-Install using the Node Package Manager (NPM).
+Install using the *Node Package Manager (NPM)*.
 ```bash
 $ npm install qibla
 ```
