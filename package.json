@@ -2,16 +2,26 @@
   "name": "qibla",
   "version": "0.1.0",
   "description": "A helper class (Qibla) to provide you the qibla direction relative to True North based on provided coordinates",
-  "main": "app.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
-    "test": "mocha -r ts-node/register"
+    "test": "mocha -r ts-node/register",
+    "build": "tsc",
+    "lint": "eslint src/**",
+    "lint-fix": "eslint src/** --fix",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/daanishrumani/qibla.git"
   },
+  "files": [
+    "lib/**/*"
+  ],
   "mocha": {
-    "spec": "test/**/*.spec.ts"
+    "spec": "tests/**/*.spec.ts"
   },
   "keywords": [
     "qibla",
@@ -26,5 +36,21 @@
   "bugs": {
     "url": "https://github.com/daanishrumani/qibla/issues"
   },
-  "homepage": "https://github.com/daanishrumani/qibla#readme"
+  "homepage": "https://github.com/daanishrumani/qibla#readme",
+  "devDependencies": {
+    "@types/chai": "^4.2.21",
+    "@types/mocha": "^9.0.0",
+    "@types/node": "^16.7.1",
+    "@typescript-eslint/eslint-plugin": "^4.29.3",
+    "@typescript-eslint/parser": "^4.29.3",
+    "chai": "^4.3.4",
+    "eslint": "^7.32.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.24.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "mocha": "^9.1.0",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.3.5"
+  }
 }
