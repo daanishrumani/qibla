@@ -1,0 +1,30 @@
+{
+  "name": "qibla",
+  "version": "0.1.0",
+  "description": "A helper class (Qibla) to provide you the qibla direction relative to True North based on provided coordinates",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha -r ts-node/register"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daanishrumani/qibla.git"
+  },
+  "mocha": {
+    "spec": "test/**/*.spec.ts"
+  },
+  "keywords": [
+    "qibla",
+    "compass",
+    "location",
+    "muslim",
+    "prayer",
+    "islam"
+  ],
+  "author": "Daanish Rumani (@daanishrumani)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/daanishrumani/qibla/issues"
+  },
+  "homepage": "https://github.com/daanishrumani/qibla#readme"
+}
