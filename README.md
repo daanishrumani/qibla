@@ -12,7 +12,7 @@ $ npm install qibla --save
 ```
 
 # TypeScript Usage
-Import the *Qibla* class. Call the static function `degreesFromTrueNorth()` to calcuate the degrees from *True North* for the provided coordinates `(lat, long)`.
+Import the *Qibla* class. Call the static function `degreesFromTrueNorth()` with the coordinates of the current location `(lat, long)`. It returns the direction of *Kaaba* from the current location *i.e.* the *Qibla* as degrees from *True North*.
 ```typescript
 import {Qibla} from 'qibla';
 
@@ -21,7 +21,7 @@ let qiblaFromTrueNorth = Qibla.degreesFromTrueNorth(19.0826881, 72.6009796);
 ```
 
 # JavaScript Usage
-Import the *Qibla* class. Call the static function `degreesFromTrueNorth()` to calcuate the degrees from *True North* for the provided coordinates `(lat, long)`.
+Import the *Qibla* class. Call the static function `degreesFromTrueNorth()` with the coordinates of the current location `(lat, long)`. It returns the direction of *Kaaba* from the current location *i.e.* the *Qibla* as degrees from *True North*.
 ```javascript
 let Qibla = require('qibla').Qibla;
 
