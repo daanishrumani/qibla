@@ -1,2 +1,2 @@
 
-export { Qibla } from './qibla';
+export {Qibla} from './qibla';
