@@ -10,7 +10,8 @@
     "lint": "eslint src/** --fix",
     "prepare": "npm run build",
     "prepublishOnly": "npm test && npm run lint",
-    "preversion": "npm run lint"
+    "preversion": "npm run lint",
+    "prepare-for-publish": "npm run lint && npm run build && npm test"
   },
   "repository": {
     "type": "git",
