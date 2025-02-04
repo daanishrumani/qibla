@@ -1,6 +1,6 @@
 {
   "name": "qibla",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A helper class (Qibla) to provide you the qibla direction relative to True North based on provided coordinates",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -48,7 +48,7 @@
     "eslint-plugin-import": "^2.24.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
-    "mocha": "^9.1.0",
+    "mocha": "^11.1.0",
     "ts-node": "^10.2.1",
     "typescript": "^4.3.5"
   }
